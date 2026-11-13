@@ -17,7 +17,7 @@ function getPostsCallback(callback) {
 
 function getCommentsCallback(callback) {
     fetchData('https://jsonplaceholder.typicode.com/comments', function(data) {
-        const sorted = data.sort((a, b) => a.email > b.email ? 1 : -1);
+        const sorted = data.sort((a, b) => a.name > b.name ? 1 : -1);
         callback(sorted);
     });
 }
