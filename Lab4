@@ -100,8 +100,3 @@ getUsersAsync().then(function(users) {
     console.log("Получить тоько важные поля пользователя:");
     console.log(users);
 });
-
-getUncompletedTodosAsync().then(function(todos) {
-    console.log("Несделаные задания:");
-    console.log(todos.slice(0, 5));
-});
